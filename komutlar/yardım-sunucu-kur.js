@@ -7,13 +7,12 @@ exports.run = async (client, message, args) => {
   }
 
 let images = ['https://media.giphy.com/media/mBkM18U5OMSkTcDmeu/giphy.gif', 'https://media.giphy.com/media/RGRzukK0YNlQbZEUVP/giphy.gif'];
-message.channel.send(new Discord.MessageEmbed().setColor('#000001').setDescription(`**CloudUP Ana Menüsüne Hoş Geldin Dostum :innocent:
-${client.user} Kullanırken \`@CloudUP\` rolünü en yukarıda tutunuz.**
+message.channel.send(new Discord.MessageEmbed().setColor('#000001').setDescription(`**Servers Template Ana Menüsüne Hoş Geldin Dostum :innocent:
+${client.user} Kullanırken Botun Özel Rolünü rolünü en yukarıda tutunuz.**
 **
-🐝 \`${client.ayarlar.prefix}sunucu-tema\`
+🐝 \`${client.ayarlar.prefix}sunucu-tema\` Menüsün de neler var?
 
-> Kayıt, Kutulu \`&\` Kutusuz, Diğer, Tag rol,
-> Koruma, Say, Aktiflik, Mesaj tag
+> Public, Nitro, Oyun Gibi Sunucların Şablonları
 
 
 🦋 \`${client.ayarlar.prefix}sunucu-kur\` Menüsün de neler var?
@@ -26,11 +25,11 @@ ${client.user} Kullanırken \`@CloudUP\` rolünü en yukarıda tutunuz.**
 > Botun Davet Linki
 > Destek Sunucumuzun Davet Linki
 
-💸 İninal Barkod NO: \`123456789123\`
+💸 İninal Barkod NO: \`4002180346745\`
 💸 Papara Hesap NO: \`1234567891\`
 
 
-💐 CloudUP Youtube Eğitim: :)
+💐 Youtube Destek için [TIKLA](https://youtube.com/GweepCreativeOfficial) :)
 **`).setThumbnail(message.author.avatarURL() ? message.author.avatarURL({dynamic: true}) : 'https://cdn.glitch.com/8e70d198-9ddc-40aa-b0c6-ccb4573f14a4%2F6499d2f1c46b106eed1e25892568aa55.png').setImage(images.random()))
 
 };
