@@ -24,7 +24,7 @@ message.channel.send(new Discord.MessageEmbed()
 \`${client.ayarlar.prefix}sunucu-kur\` 
 **Klasik oyun & sohbet sunucusu kurar**
 
-\`\`\`Farklı temalar için, Kendi sunucu şablonunu \`${client.ayarlar.prefix}gönder\` Komutu ile bize iletebilirsin! \n\`\`\``)
+\`\`\`Farklı temalar için, Kendi sunucu şablonunu \`${client.ayarlar.prefix}gönder\` Komutu ile bize iletebilirsin! \n Daha Fazla Temalar için \`${client.ayarlar.prefix}diğer-temalar\` Komutunu Kullan. \`\`\``)
 .setThumbnail('https://media.discordapp.net/attachments/722476871941357979/761287159801577482/standard.gif'));
 
 };
