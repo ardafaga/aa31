@@ -3,17 +3,16 @@ const data = require('quick.db');
 const ms = require('ms');
 
 exports.run = async (client, message, args) => {
-const datas = await data.fetch(`${message.author.id}.zaman.gif`);
+const datas = await data.fetch(`${message.author.id}.zaman.oyun`);
 if(Date.now() < datas) return message.channel.send(new Discord.MessageEmbed().setColor('#00001').setDescription(`${message.author} **__6__ saat de bir kullanabilirsiniz!**`)).then(m => m.delete({timeout: 6000}));
+data.set(`${message.author.id}.zaman.oyun`, Date.now()+ms('6h'));
 message.channel.send(new Discord.MessageEmbed()
-.setDescription(`${message.author} **Özelden gönderdim gif sunucunu gönderdim bakar mısın.**`));
-data.set(`${message.author.id}.zaman.gif`, Date.now()+ms('6h'));
-message.author.send(`> **1 adet gif sunucusu kurmak için tema geldi.**
+.setDescription(`${message.author} **Özelden gönderdim __gif sunucunu__ gönderdim bakar mısın.**`));
+message.author.send(`> **1 adet __Gif__ sunucusu kurmak için tema geldi.
 
 > Güle güle kullan 😇
 
-https://discord.new/p5cWAmc6G3Gr`).catch(error => message.channel.send(new Discord.MessageEmbed().setDescription("Mesajı gönderemedim. Muhtemelen DM'n kapalı.")));
-
+https://discord.new/ntcXzUTrMx5U`).catch(error => message.channel.send(new Discord.MessageEmbed().setDescription("Mesajı gönderemedim. Muhtemelen DM'n kapalı.")));
 };
 exports.conf = {
   enabled: true,
