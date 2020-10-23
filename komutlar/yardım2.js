@@ -45,8 +45,13 @@ msg.edit(embed)
 })
 };
  
-module.exports.config = {
-name: 'yardım2',
-aliases: ["help2", "y2", "h2"]
+exports.conf = {
+  enabled: true,
+  guildOnly: true,
+  aliases: ['y3', 'help2'],
+  permLevel: 0
+}
+
+exports.help = {
+  name: 'yardım2'
 };
- 

@@ -1,8 +1,6 @@
 const chalk = require("chalk");
 const moment = require("moment");
 const Discord = require("discord.js");
-const rabel = require('../gweep/rabel.json');
-var prefix = rabel.prefix;
 
 module.exports = async client => {
 
