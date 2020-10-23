@@ -14,11 +14,11 @@ ${client.user} Kullanırken Botun Özel Rolünü rolünü en yukarıda tutunuz.*
 
 🦋 \`${client.ayarlar.prefix}nitro-sunucu-kur\` Nitro Sunucusu Kurar.
 
-🦋 \`${client.ayarlar.prefix}j4j-sunucu-kur\` Nitro Sunucusu Kurar.
+🦋 \`${client.ayarlar.prefix}j4j-sunucu-kur\` J4J Sunucusu Kurar.
 
-🦋 \`${client.ayarlar.prefix}oyun-sunucu-kur\` Nitro Sunucusu Kurar.
+🦋 \`${client.ayarlar.prefix}oyun-sunucu-kur\` Oyun Sunucusu Kurar.
 
-🦋 \`${client.ayarlar.prefix}normal-sunucu-kur\` Nitro Sunucusu Kurar.
+🦋 \`${client.ayarlar.prefix}normal-sunucu-kur\` Normal Sunucusu Kurar.
 
 🔥 \`${client.ayarlar.prefix}davet\` Menüsün de neler var?
 
