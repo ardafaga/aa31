@@ -50,32 +50,32 @@ message.guild.roles.create({ data: { name: 'Inviter II' }, reason: 'ayn' }).then
 message.guild.roles.create({ data: { name: 'Inviter I' }, reason: 'ayn' }).then(s => s.setColor('#992c2c'))
 message.guild.roles.create({ data: { name: 'Muted' }, reason: 'ayn' }).then(s => s.setColor('#b40808'))
 
-message.guild.channels.create('🚀゜', {type: 'category'}).then(parent => {
-message.guild.channels.create('🚀', {type: 'voice'}).then(a => a.setParent(parent.id) && a.setUserLimit(5));
+message.guild.channels.create('🚀゜', {type: 'category'}).then(scd => {
+message.guild.channels.create('🚀', {type: 'voice'}).then(a => a.setParent(scd.id) && a.setUserLimit(5));
 });
 
 
-message.guild.channels.create('🍃', {type: 'category'}).then(parent => {
-message.guild.channels.create('🔔゜announcement', {type: 'text'}).then(c => c.setParent(parent.id));
-message.guild.channels.create('💎゜invite-check', {type: 'text'}).then(c => c.setParent(parent.id));
-message.guild.channels.create('🎁゜event', {type: 'text'}).then(c => c.setParent(parent.id));
-message.guild.channels.create('🔪゜read-me', {type: 'text'}).then(c => c.setParent(parent.id));
-message.guild.channels.create('🚀゜drop', {type: 'text'}).then(c => c.setParent(parent.id));
+message.guild.channels.create('🍃', {type: 'category'}).then(bilgilendirme => {
+message.guild.channels.create('🔔゜announcement', {type: 'text'}).then(c => c.setParent(bilgilendirme.id));
+message.guild.channels.create('💎゜invite-check', {type: 'text'}).then(c => c.setParent(bilgilendirme.id));
+message.guild.channels.create('🎁゜event', {type: 'text'}).then(c => c.setParent(bilgilendirme.id));
+message.guild.channels.create('🔪゜read-me', {type: 'text'}).then(c => c.setParent(bilgilendirme.id));
+message.guild.channels.create('🚀゜drop', {type: 'text'}).then(c => c.setParent(bilgilendirme.id));
 });
 
-message.guild.channels.create('🍂', {type: 'category'}).then(parent => {
-message.guild.channels.create('🎁゜rewards', {type: 'text'}).then(c => c.setParent(parent.id));
-message.guild.channels.create('💸゜proof', {type: 'text'}).then(c => c.setParent(parent.id));
+message.guild.channels.create('🍂', {type: 'category'}).then(chat => {
+message.guild.channels.create('🎁゜rewards', {type: 'text'}).then(c => c.setParent(chat.id));
+message.guild.channels.create('💸゜proof', {type: 'text'}).then(c => c.setParent(chat.id));
 });
 
-message.guild.channels.create('yetkili özel', {type: 'category'}).then(parent => {
-message.guild.channels.create('güvenlik', {type: 'text'}).then(c => c.setParent(parent.id));
-message.guild.channels.create('yetkili-özel', {type: 'text'}).then(c => c.setParent(parent.id));
-message.guild.channels.create('yetkili-özel', {type: 'text'}).then(c => c.setParent(parent.id));
+message.guild.channels.create('yetkili özel', {type: 'category'}).then(yönetici => {
+message.guild.channels.create('güvenlik', {type: 'text'}).then(c => c.setParent(yönetici.id));
+message.guild.channels.create('yetkili-özel', {type: 'text'}).then(c => c.setParent(yönetici.id));
+message.guild.channels.create('yetkili-özel', {type: 'text'}).then(c => c.setParent(yönetici.id));
 });
 
-message.guild.channels.create('Sunucu Log', {type: 'category'}).then(parent => {
-message.guild.channels.create('Sunucu Log', {type: 'text'}).then(c => c.setParent(parent.id));
+message.guild.channels.create('Sunucu Log', {type: 'category'}).then(log => {
+message.guild.channels.create('Sunucu Log', {type: 'text'}).then(c => c.setParent(log.id));
 
 });
 });
