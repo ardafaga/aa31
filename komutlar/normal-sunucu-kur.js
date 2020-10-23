@@ -136,7 +136,7 @@ resulter.delete();
 exports.conf = {
   enabled: true,
   guildOnly: true,
-  aliases: [],
+  aliases: ['normal-sunucu-kur'],
   permLevel: 0
 }
 
