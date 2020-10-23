@@ -14,7 +14,7 @@ let page = 1;
 const embed = new Discord.MessageEmbed()
 .setColor('RANDOM')
 .setThumbnail('https://cdn.discordapp.com/app-icons/522870338867167254/c82cd947b45d9d3a0f34ba8aaf0422ee.png')
-.setAuthor(`Fynx Music Yardım Menüsü`, client.user.avatarURL)
+.setAuthor(`Servers Template Yardım Menüsü`, client.user.avatarURL)
 .setFooter(`Sayfa ${page} / ${pages.length}`)
 .setDescription(pages[page-1])
 message.channel.send(embed).then(msg => {
