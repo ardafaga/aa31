@@ -9,7 +9,7 @@ const log = message => {
 };
 //gweep creative
 client.ayarlar = { 
-"token": "NzQ1MjczNjQ4ODA1NDQ1Njcz.XzvYLA.A4BqBrymCjeUJlp9uiLuOA2Heak", // token
+"token": "NzMyNDYzNzUyNTMxODA0MTYy.Xw0-Bw.sp8OmDyQcRIGfNL0dk-nKZAXNXQ", // token
 "prefix": "-", // prefix
 "sahip": "586822327568695317",// sahip
 }

@@ -6,7 +6,7 @@ exports.run = async (client, message, args) => {
     return this[Math.floor(Math.random() * this.length)];
   }
 
-let images = ['https://media.giphy.com/media/mBkM18U5OMSkTcDmeu/giphy.gif', 'https://media.giphy.com/media/RGRzukK0YNlQbZEUVP/giphy.gif'];
+let images = ['https://media.discordapp.net/attachments/722476871941357979/761287159801577482/standard.gif', 'https://media.discordapp.net/attachments/722476871941357979/761287159801577482/standard.gif'];
 message.channel.send(new Discord.MessageEmbed().setColor('#000001').setDescription(`**Servers Template Ana Menüsüne Hoş Geldin Dostum :innocent:
 ${client.user} Kullanırken Botun Özel Rolünü rolünü en yukarıda tutunuz.**
 **
