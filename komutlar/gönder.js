@@ -19,7 +19,7 @@ exports.run = function(client, message, args) {
         `Kullanıcı ID: ${message.author.id}\nKullanıcı Adı: ${message.author.username}\nKullanıcı Tagı: ${message.author.discriminator}`
       )
       .addField("Şikayet", type)
-      .setThumbnail(message.author.avatarURL());
+      
     client.channels.get("769217541632557094").send(embed2); // Kanal ID  BURAYI KESİNLİKLE DÜZENLEYİNİZ!
 };
 
