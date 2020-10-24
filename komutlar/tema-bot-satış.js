@@ -3,12 +3,12 @@ const data = require('quick.db');
 const ms = require('ms');
 
 exports.run = async (client, message, args) => {
-const datas = await data.fetch(`${message.author.id}.zaman.tasarım`);
+const datas = await data.fetch(`${message.author.id}.zaman.botsatıs`);
 if(Date.now() < datas) return message.channel.send(new Discord.MessageEmbed().setColor('#00001').setDescription(`${message.author} **__6__ saat de bir kullanabilirsiniz!**`)).then(m => m.delete({timeout: 6000}));
-data.set(`${message.author.id}.zaman.tasarım`, Date.now()+ms('6h'));
+data.set(`${message.author.id}.zaman.botsatıs`, Date.now()+ms('6h'));
 message.channel.send(new Discord.MessageEmbed()
-.setDescription(`${message.author} **Özelden gönderdim __Tasarım sunucunu__ gönderdim bakar mısın.**`));
-message.author.send(`> **1 adet __Tasarım__ sunucu kurmak için tema geldi.**
+.setDescription(`${message.author} **Özelden gönderdim __Bot Satış__ gönderdim bakar mısın.**`));
+message.author.send(`> **1 adet __Bot Satış__ sunucusu kurmak için tema geldi.
 
 > Güle güle kullan 😇
 
@@ -22,5 +22,5 @@ exports.conf = {
 }
 
 exports.help = {
-  name: 'kod-tema'
+  name: 'bot-satış-tema'
 };
