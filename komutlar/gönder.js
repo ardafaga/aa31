@@ -1,7 +1,6 @@
 const Discord = require("discord.js");
 const db = require('quick.db');
 exports.run = (client, message, args) => {
-const log = message.guild.channels.find.id("769217541632557094"); //buraya kayıt log id koyun
 
     const gönderildi = new Discord.MessageEmbed()
     .setAuthor("Yeni Şablon Gönderildi!!")
@@ -18,7 +17,7 @@ const log = message.guild.channels.find.id("769217541632557094"); //buraya kayı
     .addField(`Açıklama \n`, `${yas}`)
     .setFooter("RabeL | kayıt sistemi")
     .setColor("#000000")
-    log.send(embed)
+    client.channels.get("769217541632557094").send(embed);
   }
 exports.conf = {
   enabled: true,
