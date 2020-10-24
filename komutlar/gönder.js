@@ -4,6 +4,7 @@ exports.run = (client, message, args) => {
 
     const gönderildi = new Discord.MessageEmbed()
     .setAuthor("Yeni Şablon Gönderildi!!")
+    .addfield
     .setColor("#000000")
     message.channel.send(gönderildi)
  
