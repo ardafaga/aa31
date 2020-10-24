@@ -5,7 +5,7 @@ exports.run = (client, message, args) => {
     const link = args[0];
     const açıklama = args.slice(1).join(" ") 
     
-    if(!link) return message.channel.send("Bir Şablon girin.")
+    if (!link.includes("https://discord.new")) return message.reply(`Lütfen Geçerli Bir şablon linki gir.`)
   
     const gönderildi = new Discord.MessageEmbed()
     .setAuthor("Yeni Şablon Gönderildi!!")
