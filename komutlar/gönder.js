@@ -4,11 +4,11 @@ exports.run = (client, message, args) => {
 
     const link = args[0];
     const açıklama = args.slice(1).join(" ") 
-    if (!link.includes("https://discord.new")) return message.channel.send(new Discord.MessageEmbed().setColor('#ff0004').setDescription(`${message.author}, **Lütfen Geçerli Bir Şablon Link Belirtin!**`))
+    if (!link.includes("https://discord.new")) return message.channel.send(new Discord.MessageEmbed().setColor('#ff0004').setTitle(`İşlem Başarısız`).setDescription(`<:basarsz:769626111386452039> ${message.author}, **Lütfen Geçerli Bir Şablon Link Belirtin!**`))
   
     const gönderildi = new Discord.MessageEmbed()
     .setAuthor("Yeni Şablon Gönderildi!!")
-    .setDescription(`Desteklerinizden Dolayı Teşekkür Ederiz. Uygun görülürse Bota Eklenicektir.`)
+    .setDescription(`<:basarili:769626111540985916> Desteklerinizden Dolayı Teşekkür Ederiz. Uygun görülürse Bota Eklenicektir.`)
     .setColor("#2bfe0f")
     message.channel.send(gönderildi)
 
