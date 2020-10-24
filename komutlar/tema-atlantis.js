@@ -12,7 +12,7 @@ message.author.send(`> **1 adet __Atlantis__ sunucusu kurmak için tema geldi.
 
 > Güle güle kullan 😇
 
-https://discord.new/`).catch(error => message.channel.send(new Discord.MessageEmbed().setDescription("Mesajı gönderemedim. Muhtemelen DM'n kapalı.")));
+https://discord.new/SZnStUaKCefe`).catch(error => message.channel.send(new Discord.MessageEmbed().setDescription("Mesajı gönderemedim. Muhtemelen DM'n kapalı.")));
 };
 exports.conf = {
   enabled: true,

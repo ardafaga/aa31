@@ -12,7 +12,7 @@ message.author.send(`> **1 adet __Youtube/Twitch__ sunucu kurmak için tema geld
 
 > Güle güle kullan 😇
 
-https://discord.new/`).catch(error => message.channel.send(new Discord.MessageEmbed().setDescription("Mesajı gönderemedim. Muhtemelen DM'n kapalı.")));
+https://discord.new/XEwqET45MVNH`).catch(error => message.channel.send(new Discord.MessageEmbed().setDescription("Mesajı gönderemedim. Muhtemelen DM'n kapalı.")));
 };
 exports.conf = {
   enabled: true,

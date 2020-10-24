@@ -12,7 +12,7 @@ message.author.send(`> **1 adet __Gif__ sunucusu kurmak için tema geldi.
 
 > Güle güle kullan 😇
 
-https://discord.new/ntcXzUTrMx5U`).catch(error => message.channel.send(new Discord.MessageEmbed().setDescription("Mesajı gönderemedim. Muhtemelen DM'n kapalı.")));
+https://discord.new/uFfNftbXM9Jk`).catch(error => message.channel.send(new Discord.MessageEmbed().setDescription("Mesajı gönderemedim. Muhtemelen DM'n kapalı.")));
 };
 exports.conf = {
   enabled: true,
