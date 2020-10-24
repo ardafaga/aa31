@@ -10,7 +10,7 @@ exports.run = (client, message, args) => {
       if(!nick) return message.channel.send("Bir isim girin.")
     const embed = new Discord.RichEmbed()
     .setAuthor("Yeni Şablon Gönderildi!!")
-    .addField(`Kaydı yapılan\n`, `${c.user.tag}`)
+    .addField(`Şablonu Gönderen \n`, `<@!${c.user.id}>`)
     .addField(`Kaydı yapan\n`, `${message.author.tag}`)
     .addField(`Yeni isim\n`, ``)
     .setFooter("RabeL | kayıt sistemi")
