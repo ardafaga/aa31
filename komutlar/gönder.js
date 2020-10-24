@@ -14,7 +14,7 @@ exports.run = (client, message, args) => {
 
     const embed = new Discord.MessageEmbed()
     .setAuthor("Yeni Şablon Gönderildi!!")
-    .addField("Şablonu Gönderen \n", "<@!${message.author.user.id}>")
+    .addField("Şablonu Gönderen \n", message.author)
     .addField(`Gönderilen Şablon\n`, `${nick}`)
     .addField(`Açıklama \n`, `${yas}`)
     .setFooter("Serves Template | Hazır Şablon sistemi")
