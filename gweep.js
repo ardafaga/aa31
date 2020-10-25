@@ -9,9 +9,9 @@ const log = message => {
 };
 //gweep creative
 client.ayarlar = { 
-"token": "NzMyNDYzNzUyNTMxODA0MTYy.Xw0-Bw.sp8OmDyQcRIGfNL0dk-nKZAXNXQ", // token
-"prefix": "-", // prefix
-"sahip": "586822327568695317",// sahip
+"token": "TOKEN", // token
+"prefix": "PREFİX", // prefix
+"sahip": "İD",// sahip
 }
 //gweep creative
 client.commands = new Discord.Collection();
