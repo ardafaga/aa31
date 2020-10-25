@@ -22,5 +22,5 @@ exports.conf = {
 }
 
 exports.help = {
-  name: 'gelişmis-satış-tema'
+  name: 'j4j-v2-tema'
 };
