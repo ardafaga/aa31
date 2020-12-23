@@ -3,16 +3,14 @@ const client = new Discord.Client();//gweep creative
 const { Client, Util } = require("discord.js");
 const fs = require("fs");//gweep creative
 require("./util/eventLoader")(client);//gweep creative
+const ayarlar = require("../ayarlar.json");
+
 //gweep creative
 const log = message => {
   console.log(`${message}`);
 };
 //gweep creative
-client.ayarlar = { 
-"token": "TOKEN", // token
-"prefix": "PREFİX", // prefix
-"sahip": "İD",// sahip
-}
+
 //gweep creative
 client.commands = new Discord.Collection();
 client.aliases = new Discord.Collection();
@@ -94,7 +92,7 @@ client.elevation = message => {
 
 var regToken = /[\w\d]{24}\.[\w\d]{6}\.[\w\d-_]{27}/g
 
-client.login(client.ayarlar.token);
+client.login(ayarlar.token);
 const moment = require('moment');
 moment.locale('tr');//gweep creative
 const { S_IFREG } = require("constants");
