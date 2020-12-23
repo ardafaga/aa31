@@ -1,9 +1,9 @@
 const Discord = require("discord.js");
-const client = new Discord.Client();//gweep creative
+const client = new Discord.Client();
+const ayarlar = require("./ayarlar.json");
 const { Client, Util } = require("discord.js");
 const fs = require("fs");//gweep creative
 require("./util/eventLoader")(client);//gweep creative
-const ayarlar = require("../ayarlar.json");
 
 //gweep creative
 const log = message => {
@@ -132,4 +132,4 @@ message.channel.send(`${message.author} ${command.respond}`);
 
 
 
-client.login(client.ayarlar.token);
+client.login(ayarlar.token);
