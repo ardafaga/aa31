@@ -1,4 +1,4 @@
-let Discord = require("discord.js")
+let Discord = require("discord.js") //Bir Hata Olursa lyrax#0001 DM Veya Destek Talebi Açın - BotClub Sevgilerlerimle <3
 let database = require("quick.db")
 let ayarlar = require("../ayarlar.json")
 
@@ -20,13 +20,13 @@ if(!abonerol) return message.channel.send(`Abone rolü ayarlanmamış!`)
   await(abonekisi.roles.add(abonerol))
   
   const embed = new Discord.MessageEmbed()
-  .setTitle(`Abone Rolü Verildi!  <a:tik3:720578734327070741>`)
+  .setTitle(`Abone Rolü Verildi!  :rainbow:  `)
   .addField(`Abone Rolünü Veren Kişi:`, `${message.author.tag}`, true)
   .addField(`Abone Rolü Verilen Kişi`, `${user}`, true)
   .setThumbnail(user.avatarURL())
   .setColor(`GOLD`)
-  .setFooter(`${client.user.username} | Friday Abone Sistemi`)
-  .setImage('https://cdn.discordapp.com/attachments/775425688635047997/776109761140752426/standard.gif');
+  .setFooter(`${client.user.username} | Codeal Abone Altyapı`)
+  .setImage('https://cdn.discordapp.com/attachments/963135935166423162/963147101154459719/e274e17933fea9ce7bcc67a186c781c6.gif,https://cdn.discordapp.com/attachments/963135935166423162/963147154065621022/damian-gasinski-starslandsape-export.gif,https://cdn.discordapp.com/attachments/963135935166423162/963147177889243176/minecraft-raya-discord-banner.gif');
   message.guild.channels.cache.get(abonelog).send(embed)
 }
 
@@ -43,5 +43,5 @@ exports.help = {
 exports.play = {
   kullanım: '!abone-y-rol @rol',
   açıklama: 'Abone Yetkili Rolünü Ayarlarsınız',
-  kategori: 'Abone'
+  kategori: 'Abone' //Bir Hata Olursa lyrax#0001 DM Veya Destek Talebi Açın - BotClub Sevgilerlerimle <3
 }

@@ -1,4 +1,4 @@
-let database = require("quick.db")
+let database = require("quick.db") //Bir Hata Olursa lyrax#0001 DM Veya Destek Talebi Açın - BotClub Sevgilerlerimle <3
 let ayarlar = require("../ayarlar.json")
 
 
@@ -19,7 +19,7 @@ exports.conf = {
   guildOnly: false,
   aliases: ['abone-rol'],
   perm: 0
-}
+} 
 exports.help = {
   name: 'abonerol'
 }
@@ -28,4 +28,4 @@ exports.play = {
   kullanım: 'abonerol @rol',
   açıklama: 'Abone Rolünü Ayarlarsınız',
   kategori: 'Abone'
-}
+} //Bir Hata Olursa lyrax#0001 DM Veya Destek Talebi Açın - BotClub Sevgilerlerimle <3

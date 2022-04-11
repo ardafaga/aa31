@@ -1,4 +1,4 @@
-const Discord = require('discord.js');
+const Discord = require('discord.js'); //Bir Hata Olursa lyrax#0001 DM Veya Destek Talebi Açın - BotClub Sevgilerlerimle <3
 const data = require('quick.db');
 const ayarlar = require('../ayarlar.json');
 
@@ -25,4 +25,4 @@ module.exports = async message => {
   }
   }
 
-};
+}; //Bir Hata Olursa lyrax#0001 DM Veya Destek Talebi Açın - BotClub Sevgilerlerimle <3
