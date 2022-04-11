@@ -1,11 +1,11 @@
 {
   "name": "hello-express",
   "version": "1.0.0",
-  "description": "Gweep Creative#0001 | RabeL",
-  "main": "gweep.js",
+  "description": "lyrax#0001 | Codeal - BotClub",
+  "main": "log.js",
   "scripts": {
-    "watch": "nodemon gweep.js",
-    "start": "node gweep.js"
+    "watch": "nodemon log.js",
+    "start": "node log.js"
   },
   "dependencies": {
     "canvacord": "^5.0.7",
