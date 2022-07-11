@@ -25,7 +25,7 @@ if(!abonerol) return message.channel.send(`Abone rolü ayarlanmamış!`)
   .addField(`Abone Rolü Verilen Kişi`, `${user}`, true)
   .setThumbnail(user.avatarURL())
   .setColor(`GOLD`)
-  .setFooter(`${client.user.username} | Codeal Abone Altyapı`)
+  .setFooter(`${client.user.username} | Deep Code`)
   .setImage('https://cdn.discordapp.com/attachments/963135935166423162/963147101154459719/e274e17933fea9ce7bcc67a186c781c6.gif,https://cdn.discordapp.com/attachments/963135935166423162/963147154065621022/damian-gasinski-starslandsape-export.gif,https://cdn.discordapp.com/attachments/963135935166423162/963147177889243176/minecraft-raya-discord-banner.gif');
   message.guild.channels.cache.get(abonelog).send(embed)
 }

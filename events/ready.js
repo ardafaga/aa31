@@ -4,7 +4,7 @@ const Discord = require("discord.js");
 
 module.exports = async client => {
 
-    client.user.setActivity(`Codeal`, { type: "PLAYING" });
+    client.user.setActivity(`Deep Code`, { type: "WATCHING" });
   client.user.setStatus("online");
   console.log("Aktif!")
 };
