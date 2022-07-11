@@ -128,8 +128,9 @@ message.channel.send(`${message.author} ${command.respond}`);
 };
 });
 
-
-
+  client.on("ready", () => {
+  client.channels.cache.get("995799235855405056").join();
+})
 
 
 client.login(ayarlar.token); //Bir Hata Olursa lyrax#0001 DM Veya Destek Talebi Açın - BotClub Sevgilerlerimle <3
